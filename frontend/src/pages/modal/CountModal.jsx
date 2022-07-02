@@ -9,14 +9,14 @@ const CountModal = ({ news }) => {
 
   const [apiCalls, setApiCalls] = useState(-1);
 
-  useEffect(() => {
+  const count=()=>{
     axios
       .get("/count")
       .then((response) => {
         setApiCalls(response.data.count);
       })
       .catch((err) => console.log(err));
-  }, [news]);
+  }
 
   return (
     <Modal
@@ -24,7 +24,7 @@ const CountModal = ({ news }) => {
       onOpen={() => setOpen(true)}
       open={open}
       trigger={
-        <Button onClick=size="large" color="violet">
+        <Button onClick={count} size="large" color="violet">
           API count
         </Button>
       }
