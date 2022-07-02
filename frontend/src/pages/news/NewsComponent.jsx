@@ -12,12 +12,12 @@ const NewsComponent = () => {
     <Resizable
       defaultSize={{
         width: "60vw",
-        height: "80vh",
+        height: "60vh",
       }}
       className={styles.news}
     >
       <div>
-        <h2>New of The Day</h2>
+        <h2>News of the day</h2>
         <h2>{news}</h2>
         <div>
             <AddModal news={news} setNews={setNews} />
