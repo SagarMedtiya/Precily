@@ -10,7 +10,7 @@ class controller{
             } else {
                 console.log("DB cleared");
             }
-        });
+        }).clone().catch(function(err){ console.log(err)});
         let news = new News(req.body);
         await news.save((err, news) => {
             if (err) {
@@ -37,7 +37,8 @@ class controller{
                   return res.status(200).send({message: "Updated successfully"})
                 }
             }
-    )};
+    ).clone().catch(function(err){ console.log(err)})
+    };
     async count(req,res){
         return res.json({count: count});
     }
