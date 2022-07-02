@@ -1,6 +1,5 @@
-import './App.css';
+import styles from './App.module.css';
 import React from 'react'
-import {Router, Route} from 'react-router-dom';
 import ClockComponent from './pages/clock/ClockComponent';
 import NewsComponent from './pages/news/NewsComponent';
 import QuoteComponent from './pages/quote/QuoteComponent'
@@ -8,7 +7,7 @@ import QuoteComponent from './pages/quote/QuoteComponent'
 function App() {
   return (
     <>
-    <div className="App">
+    <div className={styles.app}>
       <ClockComponent/>
       <NewsComponent/>
     </div>
