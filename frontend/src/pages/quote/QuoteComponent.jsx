@@ -1,10 +1,10 @@
 import React from "react";
 import { Resizable } from "re-resizable";
-import styles from "./QuoteComponent.module.css";
+import  "./QuoteComponent.module.css";
 
 const QuoteComponent = () => {
   return (
-    <div className={styles.quote}>
+    <div className="quotes">
       <Resizable
         defaultSize={{
           width: "90vw",
