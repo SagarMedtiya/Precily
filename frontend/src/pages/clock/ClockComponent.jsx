@@ -20,7 +20,7 @@ const ClockComponent = () => {
         className={styles.clockStyle}
         defaultSize={{
           width: "30vw",
-          height: "80vh",
+          height: "70vh",
         }}
       >
         <Clock value={time} />
