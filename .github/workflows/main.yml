@@ -3,14 +3,13 @@ name: Production workflow
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Development Code
+      - name: Checkout code
         uses: actions/checkout@v2
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
@@ -22,5 +21,5 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: 'precily2'
+          heroku_app_name: 'precily'
           heroku_email: 'sagarmedtiya@gmail.com'
