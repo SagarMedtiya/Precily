@@ -28,9 +28,10 @@ services:
       dockerfile: Dockerfile.prod
       context: ./
     container_name: frontend
+    env:
+      - PORT: $port
     ports:
-      - "80:80"
-      - "443:443"
+      - $port:"80"
     env_file:
       - ./frontend/.env
     depends_on:
