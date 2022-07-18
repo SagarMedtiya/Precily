@@ -19,7 +19,7 @@ const NewsComponent = () => {
       <div>
         <h2>News of the day</h2>
         <h2>{news}</h2>
-        <div>
+        <div className={styles.container}>
             <AddModal news={news} setNews={setNews} />
             <UpdateModal news={news} setNews={setNews} />
             <CountModal newse={news} />
