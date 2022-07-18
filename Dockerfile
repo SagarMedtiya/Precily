@@ -1,7 +1,7 @@
-FROM node:16 as build
-WORKDIR /frontend
-COPY ./frontend/package*.json ./
+FROM node:14
+WORKDIR /usr/local/bin/backend
+COPY . /usr/local/bin/backend/
 RUN npm install
-COPY ./frontend/ ./
-EXPOSE 80
-RUN npm run build
+RUN npm install --prefix frontend
+RUN npm run --prefix frontend build
+CMD ["npm", "start"]
