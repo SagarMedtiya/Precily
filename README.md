@@ -18,5 +18,7 @@ The API supports three endpoints ie
 - **/update** for updating the news
 - **/count** for returning the count of the API calls
 
+Execution time for the add route is 34ms, update route is 20ms and for count route is 6ms.
 
+## Postman Screenshots
 
