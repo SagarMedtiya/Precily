@@ -22,6 +22,6 @@ jobs:
           run: |
             heroku container:login
             heroku container:push --recursive -a precily4
-            heroku container:release -a precily4
+            heroku container:release -a precily4 web
       
         
