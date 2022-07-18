@@ -17,6 +17,7 @@ jobs:
           heroku_email: "sagarmedtiya@gmail.com"
           appdir: "backend"
           justlogin: true
+          working-directory: ./backend
       - run: |
           heroku container:login
           heroku container:push --recursive -a precily4
