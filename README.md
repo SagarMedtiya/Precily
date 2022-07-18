@@ -2,14 +2,11 @@
 
 ## Stack
 - **Frontend**
-   
-   ✅ React , Material-UI
+  -✅React , Material-UI
 - **Backend**
-   
-   ✅ NodeJs , Express
+  -✅ NodeJs , Express
 - **Database**
-   
-   ✅ MongoDB
+  -✅ MongoDB
 - **Docker**
 
 
