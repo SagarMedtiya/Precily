@@ -15,10 +15,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "precily4" #Must be unique in Heroku
           heroku_email: "sagarmedtiya@gmail.com"
-          justlogin: true
-      - run: |
-          heroku container:login
-          heroku container:push --recursive -a precily4
-          heroku container:release -a precily4
-          heroku container:release -a precily4 web
+          useDocker: true
+      
         
