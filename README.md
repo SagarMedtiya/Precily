@@ -21,4 +21,4 @@ The API supports three endpoints ie
 Execution time for the add route is 34ms, update route is 20ms and for count route is 6ms.
 
 ## Postman Screenshots
-<img src="./images/StartingPage.png" alt="one" />
+<img src="./images/Screenshot 2022-07-18 213831.png" alt="one" />
